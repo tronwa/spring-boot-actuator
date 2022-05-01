@@ -59,6 +59,11 @@
 			<version>4.4</version>
 		</dependency>
 		<dependency>
+			<groupId>guru.springframework</groupId>
+			<artifactId>chuck-norris-for-actuator</artifactId>
+			<version>2.4.0</version>
+		</dependency>
+		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 			<version>2.1.212</version>
@@ -96,6 +101,13 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>build-info</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 			<plugin>
 				<groupId>pl.project13.maven</groupId>

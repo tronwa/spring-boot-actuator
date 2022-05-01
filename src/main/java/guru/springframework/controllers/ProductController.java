@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class ProductController {
 
     private ProductService productService;
+    private 
 
     @Autowired
     public void setProductService(ProductService productService) {
